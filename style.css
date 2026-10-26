@@ -1,0 +1,453 @@
+/* =========================
+   PENGATURAN DASAR
+========================= */
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: Georgia, "Times New Roman", serif;
+    color: #40372d;
+    background-color: #faf6ef;
+    line-height: 1.7;
+}
+
+h1,
+h2,
+h3,
+p {
+    margin-top: 0;
+}
+
+
+/* =========================
+   HALAMAN PEMBUKA
+========================= */
+
+.cover {
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 40px 20px;
+    text-align: center;
+
+    background:
+        radial-gradient(
+            circle at top,
+            #fffdf8,
+            #eee1cc
+        );
+}
+
+.cover-content {
+    width: 100%;
+    max-width: 650px;
+
+    padding: 45px 25px;
+
+    border: 1px solid #c4a66a;
+    outline: 1px solid #c4a66a;
+    outline-offset: 8px;
+}
+
+.subtitle {
+    font-size: 0.8rem;
+    letter-spacing: 5px;
+    margin-bottom: 25px;
+    color: #8b754b;
+}
+
+.cover h1 {
+    font-size: clamp(2.5rem, 7vw, 4.5rem);
+    color: #a88746;
+    margin-bottom: 25px;
+}
+
+.invitation-text {
+    max-width: 430px;
+    margin: 0 auto 25px;
+}
+
+.guest-label {
+    margin-bottom: 0;
+    font-size: 0.9rem;
+}
+
+.guest-name {
+    font-weight: bold;
+    margin-bottom: 25px;
+}
+
+#openInvitation {
+    border-radius: 30px;
+    padding: 12px 28px;
+    background-color: #40372d;
+    border: 1px solid #40372d;
+    transition: all 0.3s ease;
+}
+
+#openInvitation:hover {
+    background-color: #a88746;
+    border-color: #a88746;
+    transform: translateY(-3px);
+}
+
+
+/* =========================
+   ISI UNDANGAN
+========================= */
+
+.invitation {
+    width: 100%;
+}
+
+.hero-section {
+    min-height: 75vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    padding: 80px 20px;
+
+    background-color: #f1e6d5;
+}
+
+.couple-name {
+    font-size: clamp(2.5rem, 7vw, 4rem);
+    color: #a88746;
+    margin-bottom: 25px;
+}
+
+.hero-description {
+    max-width: 500px;
+}
+
+.ornament {
+    font-size: 3rem;
+    color: #a88746;
+    margin-top: 20px;
+}
+
+
+/* =========================
+   PROFIL MEMPELAI
+========================= */
+
+.couple-section {
+    padding-top: 90px;
+    padding-bottom: 90px;
+}
+
+.couple-section h2,
+.event-section h2 {
+    font-size: 2.2rem;
+    color: #a88746;
+    margin-bottom: 20px;
+}
+
+.section-description {
+    max-width: 550px;
+    margin: 0 auto 25px;
+}
+
+.couple-card {
+    height: 100%;
+    padding: 35px 20px;
+
+    background-color: #fffdf8;
+    border: 1px solid #e0d1b7;
+    border-radius: 12px;
+
+    box-shadow: 0 5px 18px rgba(64, 55, 45, 0.06);
+}
+
+.couple-card h3 {
+    color: #a88746;
+    font-size: 1.5rem;
+}
+
+
+/* =========================
+   INFORMASI ACARA
+========================= */
+
+.event-section {
+    padding: 90px 20px;
+    background-color: #f1e6d5;
+}
+
+.event-card {
+    max-width: 550px;
+    margin: 35px auto 0;
+    padding: 35px 25px;
+
+    background-color: #fffdf8;
+    border-radius: 12px;
+    border: 1px solid #e0d1b7;
+}
+
+.event-card h3 {
+    color: #a88746;
+    margin-bottom: 20px;
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+.footer-section {
+    padding: 60px 20px;
+    background-color: #40372d;
+    color: #fffdf8;
+}
+
+.footer-section h2 {
+    color: #d6bb81;
+    margin-top: 20px;
+}
+
+.footer-note {
+    font-size: 0.85rem;
+    margin-bottom: 0;
+}
+
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 576px) {
+
+    .cover-content {
+        padding: 35px 18px;
+    }
+
+    .subtitle {
+        letter-spacing: 3px;
+    }
+
+    .couple-section,
+    .event-section {
+        padding-top: 65px;
+        padding-bottom: 65px;
+    }
+
+    .event-card {
+        padding: 28px 18px;
+    }
+}.couple-photo {
+    width: 180px;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 90px 90px 12px 12px;
+    margin-bottom: 25px;
+    border: 3px solid #d6bb81;
+}
+/* =========================
+   COUNTDOWN PERNIKAHAN
+========================= */
+
+.countdown-section {
+    margin-top: 50px;
+    padding: 35px 20px;
+}
+
+.countdown-section h3 {
+    color: #a88746;
+    font-size: 1.8rem;
+    margin-bottom: 25px;
+}
+
+.countdown-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.countdown-box {
+    width: 100px;
+    padding: 18px 10px;
+
+    background-color: #fffdf8;
+    border: 1px solid #d6bb81;
+    border-radius: 10px;
+}
+
+.countdown-box span {
+    display: block;
+    color: #a88746;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.countdown-box p {
+    margin: 5px 0 0;
+    font-size: 0.9rem;
+}
+
+#countdownMessage {
+    margin-top: 20px;
+    font-weight: bold;
+    color: #8b754b;
+}
+/* =========================
+   GALERI FOTO
+========================= */
+
+.gallery-section {
+    padding: 90px 20px;
+    background-color: #faf6ef;
+}
+
+.gallery-section h2 {
+    color: #a88746;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.gallery-grid {
+    margin-top: 40px;
+}
+
+.gallery-card {
+    overflow: hidden;
+    border-radius: 14px;
+    border: 1px solid #d6bb81;
+    background-color: #fffdf8;
+    box-shadow: 0 5px 18px rgba(64, 55, 45, 0.08);
+}
+
+.gallery-photo {
+    display: block;
+    width: 100%;
+    height: 320px;
+    object-fit: cover;
+    transition: transform 0.4s ease;
+}
+
+.gallery-card:hover .gallery-photo {
+    transform: scale(1.05);
+}
+
+@media (max-width: 576px) {
+    .gallery-section {
+        padding: 65px 15px;
+    }
+
+    .gallery-photo {
+        height: 280px;
+    }
+}
+/* =========================
+   FORMULIR RSVP
+========================= */
+
+.rsvp-section {
+    padding: 90px 20px;
+    background-color: #f1e6d5;
+}
+
+.rsvp-section h2 {
+    color: #a88746;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.rsvp-form {
+    max-width: 550px;
+    margin: 40px auto 0;
+    padding: 35px;
+
+    text-align: left;
+
+    background-color: #fffdf8;
+    border: 1px solid #e0d1b7;
+    border-radius: 14px;
+
+    box-shadow: 0 5px 18px rgba(64, 55, 45, 0.06);
+}
+
+.rsvp-form .form-label {
+    color: #40372d;
+    font-weight: bold;
+}
+
+.rsvp-form .form-control,
+.rsvp-form .form-select {
+    padding: 12px;
+    border-color: #d6bb81;
+    background-color: #fffdf8;
+}
+
+.rsvp-form .form-control:focus,
+.rsvp-form .form-select:focus {
+    border-color: #a88746;
+    box-shadow: 0 0 0 0.2rem rgba(168, 135, 70, 0.15);
+}
+
+.rsvp-button {
+    width: 100%;
+    padding: 12px;
+    margin-top: 10px;
+
+    background-color: #40372d;
+    border-color: #40372d;
+}
+
+.rsvp-button:hover {
+    background-color: #a88746;
+    border-color: #a88746;
+}
+
+.rsvp-message {
+    margin: 20px 0 0;
+    font-weight: bold;
+    color: #6b7544;
+}
+
+@media (max-width: 576px) {
+    .rsvp-section {
+        padding: 65px 15px;
+    }
+
+    .rsvp-form {
+        padding: 25px 20px;
+    }
+}
+/* Tombol lokasi acara */
+
+.location-button {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 12px 25px;
+
+    background-color: #40372d;
+    border-color: #40372d;
+    border-radius: 30px;
+
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.location-button:hover {
+    background-color: #a88746;
+    border-color: #a88746;
+    transform: translateY(-3px);
+}
+/* Mengatur posisi foto ketiga di galeri */
+.gallery-photo-third {
+    object-position: center top;
+}
